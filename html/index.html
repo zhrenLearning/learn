@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0048)http://dreamhead.blogbus.com/logs/227268386.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Hello，Travis CI - 梦想风暴 - 博客大巴</title>
+<meta name="keywords" content="博客中国,中国博客,我的博客,私人日志,博客大巴,图片博客,社会热点,观点,生活,旅行,影像,自由,表达,城客,记录,分享,看法自由报,新媒体,博客研究,播客,BSP,个人门户,免费博客,空间,博客申请,中文博客,Blog,Blogger,网络日志,自媒体,社交网络,小清新,文艺范儿">
+<meta name="description" content="Travis CI，是一个专门为开源项目打造的持续集成环境。
+如果你有一个放在github上的开源项目，Travis CI简直就是一个完美的CI选择。下面以Moco为例，说明如何在自己的项目里添加Travis CI支持。
+实际上，只要采用的是“标准工具”，支持Travis CI就简单得一塌糊涂。第一步，我们要在自己项目的根目录下添加一个文件.travis...">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://dreamhead.blogbus.com/index.rdf">
+<link href="./index_files/50004.css" rel="stylesheet" type="text/css">
+<script>if (top.location != self.location) {top.location=self.location;}</script><script src="./index_files/jquery.js"></script><script type="text/javascript" src="./index_files/m.js"></script><script type="text/javascript" src="./index_files/checkSpam.js"></script><script type="text/javascript">
+var content_img_width = 500;
+</script><!--<base href="http://dreamhead.blogbus.com">--><base href="."><link href="./index_files/bdsstyle.css" rel="stylesheet" type="text/css"><script src="./index_files/logger.js"></script></head><body><div id="BAIDU_DUP_fp_wrapper" style="position: absolute; left: -1px; bottom: -1px; z-index: 0; width: 0px; height: 0px; overflow: hidden; visibility: hidden; display: none;"><iframe id="BAIDU_DUP_fp_iframe" src="./index_files/o.html" style="width: 0px; height: 0px; visibility: hidden; display: none;"></iframe></div><iframe frameborder="0" style="display: none;"></iframe><div id="bdshare_s" style="display: block;"><iframe id="bdsIfr" style="position:absolute;display:none;z-index:9999;" frameborder="0"></iframe><div id="bdshare_l" style="display: none;"><div id="bdshare_l_c"><h6>分享到</h6><ul><li><a href="http://dreamhead.blogbus.com/#" class="bds_mshare mshare">一键分享</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_qzone qqkj">QQ空间</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_tsina xlwb">新浪微博</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_bdysc bdysc">百度云收藏</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_renren rrw">人人网</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_tqq txwb">腾讯微博</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_bdxc bdxc">百度相册</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_kaixin001 kxw">开心网</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_tqf txpy">腾讯朋友</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_tieba bdtb">百度贴吧</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_douban db">豆瓣网</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_tsohu shwb">搜狐微博</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_bdhome bdhome">百度新首页</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_sqq sqq">QQ好友</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_thx thx">和讯微博</a></li><li><a href="http://dreamhead.blogbus.com/#" class="bds_more">更多...</a></li></ul><p><a href="http://dreamhead.blogbus.com/#" class="goWebsite">百度分享</a></p></div></div></div>
+<div id="index">
+	<div id="container">
+		<div id="header">
+			<h1 class="blogName"><a href="http://dreamhead.blogbus.com/" title="http://dreamhead.blogbus.com">梦想风暴</a></h1>
+			<div class="description">一个小程序员的信口开河</div>
+			<div class="clear"></div>
+		</div>
+       <div id="innerContainer">
+           <div class="innerTop"></div>
+            <div id="outerContent">
+                <div id="content">
+                    <div class="contentTop"></div>
+                        <ul id="posts">
+                            <div class="postsTop"></div>
+                            <div class="context"><span class="pre"><a href="http://www.blogbus.com/dreamhead-logs/226738756.html">&lt;&lt;&nbsp;&nbsp;你应该更新的Java知识之常用程序库（二）</a></span> | <span class="top"><a href="http://dreamhead.blogbus.com/">首页</a></span> | <span class="next"><a href="http://www.blogbus.com/dreamhead-logs/227427912.html">你应该更新的Java知识之构建工具&nbsp;&nbsp;&gt;&gt;</a></span></div>
+                            <!--list-->
+                            <li>
+                                <div class="postHeader">
+                                    <h3>2013-01-13</h3>
+                                    <h2>Hello，Travis CI</h2>
+                                    <div class="tags">Tag：<a href="http://dreamhead.blogbus.com/tag/travis-ci/">travis-ci</a> <a href="http://dreamhead.blogbus.com/tag/github/">github</a> <a href="http://dreamhead.blogbus.com/tag/gradle/">gradle</a> </div>
+                                </div>
+                                <div class="postBody">
+                                    <p class="cc-lisence" style="line-height:180%;">
+<a href="http://creativecommons.org/licenses/by/3.0/deed.zh" target="_blank" rel="external nofollow">版权声明</a>：转载时请以超链接形式标明文章原始出处和作者信息及<a href="http://www.blogbus.com/bangzhuzhongxin-logs/11205960.html" target="_blank">本声明</a><br><a href="http://www.blogbus.com/dreamhead-logs/227268386.html">http://www.blogbus.com/dreamhead-logs/227268386.html</a><br><br>
+</p><p>Travis CI，是一个专门为开源项目打造的持续集成环境。</p>
+<p>如果你有一个放在github上的开源项目，Travis CI简直就是一个完美的CI选择。下面以<a href="https://github.com/dreamhead/moco" target="_blank">Moco</a>为例，说明如何在自己的项目里添加Travis CI支持。</p>
+<p>实际上，只要采用的是“标准工具”，支持Travis CI就简单得一塌糊涂。第一步，我们要在自己项目的根目录下添加一个文件.travis.yml。</p>
+<p>language: java<br>jdk:<br>&nbsp; - oraclejdk7<br>&nbsp; - openjdk7<br>&nbsp; - openjdk6<br>（.travis.yml）</p>
+<p>很容易理解，首先，我们告诉Travis CI，我们的语言是什么。这样，它会根据你的语言为你选择构建工具。对于Moco而言，构建工具是<a href="http://www.gradle.org/" target="_blank">gradle</a>，这是Java世界的新标准了，Travis CI会自动识别出来，我不需要额外告诉它什么。当然，它为Java项目支持的另外两个选择是<a href="http://maven.apache.org/" target="_blank">Maven</a>和<a href="http://ant.apache.org/" target="_blank">Ant</a>。如果你的项目是不同的语言，可以参考<a href="http://about.travis-ci.org/docs/user/getting-started/" target="_blank">Travis CI的文档</a>，找到适合自己的配置。</p>
+<p>接下里的JDK是要告诉Travis CI，我要在哪些环境下测试。比如这里用了三个JDK，分别是Oracle JDK 7、OpenJDK 7和OpenJDK 6。这样一来，当我们提交代码时，Travis CI会在三个不同环境运行我们的测试，以此保证项目的版本兼容。</p>
+<p>此外，还要额外说一下，它是如何选择运行目标的。对于Moco这样提供了Gradle支持的项目，Travis CI缺省情况下会执行gradle check，这是Gradle进行检查的缺省做法，它会编译源文件、处理资源文件、运行测试等等。在运行这个任务之前，Travis CI还会运行gradle assemble用以安装项目中用到的依赖。所有这些都是可以修改的，可以参考了Travis CI的<a href="http://about.travis-ci.org/docs/user/build-configuration/" target="_blank">构建配置文档</a>。</p>
+<p>有了这个脚本还不够，我们还要让Travis CI知道我们的项目，用自己的github账号登录Travis CI。经过认证之后，选择自己的账号配置，你会看到自己的所有的开源项目都列在那里。如果没有看到项目，请自行同步（Sync Now）。剩下的就很简单了，把要支持的Travis CI项目从OFF状态拨成ON。实际上，Travis CI是给github设置一个钩子。当有代码提交上来的时候，它会告诉Travis CI，Travis CI就可以开始构建了。</p>
+<p>好，设置完毕，尝试提交代码吧！当代码提交到github上之后，你应该可以看到你的项目开始构建了。哦，对了，项目的Travis CI地址应该等同于github上项目的地址，比如，Moco的github地址是</p>
+<p>&nbsp; <a href="https://github.com/dreamhead/moco" target="_blank">https://github.com/dreamhead/moco</a></p>
+<p>它的Travis CI地址就是</p>
+<p>&nbsp; <a href="https://travis-ci.org/dreamhead/moco" target="_blank">https://travis-ci.org/dreamhead/moco</a></p>
+<p>最后，再来一个小技巧，为了让别人知道我们项目和Travis CI有关系，我们可以在自己项目的README上给出Travis CI的构建标识。在你的Travis CI项目页面上，你应该可以找到一个配置选项。写下本文时，它就是右上角那个小齿轮，里面有个Status Images。根据自己README格式选择一个，粘贴到README文件里。</p>
+<p>好，大功告成，我们的开源项目也有了自己的CI。</p>
+<style>.relpost{clear:both}</style>
+<!-- Baidu Button BEGIN -->
+<div class="" style="clear:both;width:100%;height:30px;padding:40px 0 20px">
+<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare" style="float:left;width:260px;">
+<span class="bds_more">分享到：</span>
+<a class="bds_qzone" title="分享到QQ空间" href="http://dreamhead.blogbus.com/#"></a>
+<a class="bds_tsina" title="分享到新浪微博" href="http://dreamhead.blogbus.com/#"></a>
+<a class="bds_tqq" title="分享到腾讯微博" href="http://dreamhead.blogbus.com/#"></a>
+<a class="bds_renren" title="分享到人人网" href="http://dreamhead.blogbus.com/#"></a>
+<a class="bds_t163" title="分享到网易微博" href="http://dreamhead.blogbus.com/#"></a>
+<a class="shareCount" href="http://dreamhead.blogbus.com/#" title="累计分享0次">0</a>
+</div>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=6785502" src="./index_files/bds_s_v2.js"></script>
+
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --><div class="relpost"><br><h3>历史上的今天：</h3><div><a href="http://www.blogbus.com/dreamhead-logs/33816442.html">非“敏捷”咨询（二）</a> 2009-01-13</div></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="tb_url">引用地址：<input type="text" value="http://www.blogbus.com/public/tb.php/4212/227268386/92d2f98bb8a87e794cc57d1536dd0361"></div>
+                                <div class="postFooter">
+                                    <div class="menubar"><span class="author"><a href="http://home.blogbus.com/profile/"></a></span> 发表于<span class="time">08:36</span> | <a href="http://blog.home.blogbus.com/4212/posts/227268386/form" class="edit">编辑</a> | <a href="javascript:;" class="dig" target="_blank" onclick="share_click(&#39;share_da4125efbf1d4c3011ae3297b4ba567f&#39;); Picobox.showIFrameBox(&#39;分享文章&#39;,&#39;http://app.home.blogbus.com/share?url=http%3A%2F%2Fdreamhead.blogbus.com%2Flogs%2F227268386.html&amp;from=blogbus&amp;back=http%3A%2F%2Fdreamhead.blogbus.com&#39;,{width:400,height:260}); return false;">分享<span id="share_da4125efbf1d4c3011ae3297b4ba567f">　0</span></a></div>
+                                </div>
+                            </li>
+                            <!--/list-->
+                            <div class="postsBottom"></div>
+                        </ul><link rel="stylesheet" href="./index_files/picobox.css" type="text/css">
+			<link rel="stylesheet" href="./index_files/picobox_beauty.css" type="text/css">
+			<script type="text/javascript" src="./index_files/picobox.js"></script>
+			<script type="text/javascript" src="./index_files/picobox_beauty.js"></script>
+<div id="commentForm"><h2>发表评论</h2>
+<a name="cmt_form"></a>
+<form method="post" name="cform" action="http://passport.blogbus.com/login?passport=1&amp;app=blogbus&amp;goto=http%3A%2F%2Fhome.blogbus.com%2Fpassport%3F_pspt%3D1%26_data%3D%5Bdata%5D%26_sign%3D%5Bsign%5D%26forward%3Dhttp%253A%252F%252Fdreamhead.blogbus.com%252Fpassport.html%26return%3D1&amp;once=484e4896b4535c7a&amp;sign=iazdypzLDCtZghnDN8sM-Q&amp;return=1" onsubmit="return check_cmt(this);" target="ifr_login">
+<fieldset style="margin:0;padding:0;border:none;display:none;" id="fs_nologin">
+<div><label for="cname">姓　名</label><input class="textField" id="cname" name="cname" type="text">
+<span style="color:#ccc;margin-left:5px;" class="emailnotice"><a href="http://dreamhead.blogbus.com/#" title="登录后评论" style="text-decoration:underline;" onclick="return login_mode();">登录后评论</a></span></div>
+<div><label for="cemail">E-Mail</label><input class="textField" id="cemail" name="email" type="text">
+<span style="color:#ccc;margin-left:5px;" class="emailnotice">您将收到博主的回复邮件</span>
+</div>
+<div><label for="chomepage">地　址</label><input class="textField" id="chomepage" name="homepage" type="text"></div>
+</fieldset>
+<fieldset style="margin: 0px; padding: 0px; border: none; display: block;" id="fs_login">
+<div><label for="username">用户名</label><input class="textField" id="username" name="username" type="text" tabindex="1">
+    </div>
+<div><label for="password">密　码</label><input class="textField" id="password" name="password" type="password" value="" tabindex="2"></div>
+</fieldset>
+<div><textarea name="content" rows="8" tabindex="3"></textarea></div>
+<div class="submit">
+<input type="hidden" name="login" value="0">
+<input type="hidden" name="postId" value="227268386">
+<input type="hidden" name="blogId" value="4212">
+<input type="hidden" name="checksum" value="13fcbd80d9129c4lde851a7b185d8f82">
+<input type="hidden" name="name" value="">
+<table>
+<tbody><tr>
+<td><input class="button" name="addsub" value="提交" id="submit_comment" type="submit"></td>
+<td id="share_check">
+
+</td>
+</tr>
+</tbody></table>
+</div>
+</form>
+<iframe style="display:none;width:1px;height:1px;" name="ifr_login" id="ifr_login" src="./index_files/saved_resource.html"></iframe></div>
+<script type="text/javascript" src="./index_files/cmt_form"></script>
+<script type="text/javascript">var post_ids='227268386';</script><script type="text/javascript" src="./index_files/number"></script><script>function share_click(id){var num = parseInt(document.getElementById(id).innerHTML);	num++;document.getElementById(id).innerHTML= ' '+num;}</script><script type="text/javascript" src="./index_files/helper1.js"></script>
+                    <div class="contentBottom"></div>                    
+                </div>
+            </div>
+            <div id="outerSidebar">
+                <div id="sidebar">
+                    <div class="sideTop"></div>
+                    <div id="search" class="module">
+	<div class="modTop"></div>
+	<h2>搜索</h2>
+	<div class="modBody">
+	    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+		<input type="hidden" name="cx" value="000579218792228101724:tvuzu9tzfs0">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="textField">
+		<input type="submit" class="button" value="搜索">
+		<div class="clear"></div>
+	    </form>
+	</div>
+	<div class="modBottom"></div>
+</div><div id="nPosts" class="module">
+	<div class="modTop"></div>
+	<h2>最新日志</h2>
+	<div class="modBody">
+		<ul><li><a href="http://dreamhead.blogbus.com/logs/336859555.html">Moco 0.10.2发布</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/273611488.html">大龄程序员</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272207202.html">Moco 0.10.1发布</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272158786.html">开始新旅程</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272135038.html">记一个值得记录的项目</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272069806.html">站在2014的尾巴上</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272040531.html">Moco 0.10.0发布</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/272036642.html">读《不敢止步》</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/271871933.html">default method，开启Java面向组合编程的大门</a></li>
+<li><a href="http://dreamhead.blogbus.com/logs/271835186.html">当我加入项目时，我要了解什么（二）</a></li>
+</ul>
+		<div class="more"><a href="http://dreamhead.blogbus.com/logs/">全部日志&gt;&gt;</a></div>
+	</div>
+	<div class="modBottom"></div>
+</div><div id="nComments" class="module">
+	<div class="modTop"></div>
+	<h2>最新评论</h2>
+	<div class="modBody">
+		<ul><li><span class="author"><a href="http://yoyomissma.blogbus.com/" target="_blank">Yoyo马小姐</a></span>：<a href="http://dreamhead.blogbus.com/logs/272158786.html#cmt">虽然去创业了，但犹如你自己所讲，已经习惯了称自己为一个“...</a></li><li><span class="author"><a href="http://amazingxiu.blogbus.com/" target="_blank">清风半夜</a></span>：<a href="http://dreamhead.blogbus.com/logs/272158786.html#cmt">生命不息，折腾不止.
+生活继续向前，挺你！...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/231594181.html#cmt">有些字在评论中不能敲，真的很费劲...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/231594181.html#cmt">之前看过别人介绍spring见听模式，不知道两者有什么区...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/231594181.html#cmt">已经不能评论了吗？</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/227427912.html#cmt">一直在琢磨gradle，看了很多的例子，但是发现国内用的...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/271628808.html#cmt">好像无法发送代码例子讨论。
+
+我现在正在试着用JDK...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/272036642.html#cmt">感觉你俩差不多，你也没少跑...</a></li><li><span class="author"><a href="http://eric-wei.blogbus.com/" target="_blank">Eric Wei</a></span>：<a href="http://dreamhead.blogbus.com/logs/272036642.html#cmt">读着，好像一直在不停地奔波，就没有在一个地方老老实实的待...</a></li><li><span class="author"><a href="http://hayley.blogbus.com/" target="_blank">hayley</a></span>：<a href="http://dreamhead.blogbus.com/logs/271669052.html#cmt">wao. 你的粉丝已经两千多人了啊！...</a></li></ul>
+	</div>
+	<div class="modBottom"></div>
+</div>
+<div id="custom"><script type="text/javascript" src="./index_files/saved_resource"></script><div style=""><table cellspacing="0" cellpadding="4" style="&gt;&lt;tr align=" center"=""><tbody><tr><td style=""><a href="http://book.douban.com/subject/4860448/" title="经济解释卷一： 科学说需求 （神州增订版）
+
+" target="_blank"><img src="./index_files/s6500083.jpg" border="0"></a></td><td style=""><a href="http://book.douban.com/subject/25880074/" title="安珀志 5：混沌王庭
+
+" target="_blank"><img src="./index_files/s27301766.jpg" border="0"></a></td></tr><tr align="center"><td style=""><a href="http://book.douban.com/subject/25880068/" title="安珀志4：奥伯龙之手
+
+" target="_blank"><img src="./index_files/s27301764.jpg" border="0"></a></td><td style=""><a href="http://book.douban.com/subject/26665230/" title="硅谷之谜
+
+" target="_blank"><img src="./index_files/s28341439.jpg" border="0"></a></td></tr><tr align="center"><td style=""><a href="http://book.douban.com/subject/25953929/" title="一战简史
+
+World War One ：A Short History" target="_blank"><img src="./index_files/s27410946.jpg" border="0"></a></td><td style=""><a href="http://book.douban.com/subject/26584286/" title="大学之路
+
+" target="_blank"><img src="./index_files/s28270730.jpg" border="0"></a></td></tr><tr align="center"><td style=""><a href="http://book.douban.com/subject/1813841/" title="枪炮、病菌与钢铁
+
+Guns, Germs and Steel: The Fates of Human Societies" target="_blank"><img src="./index_files/s1738643.jpg" border="0"></a></td><td style=""><a href="http://book.douban.com/subject/26320883/" title="丈量世界
+
+Die Vermessung der Welt" target="_blank"><img src="./index_files/s28295328.jpg" border="0"></a></td></tr><tr><td align="center" colspan="2"><a href="http://www.douban.com/people/dreamhead/" target="_blank">我的豆瓣主页</a></td></tr><tr><td align="center" colspan="2"><a href="http://www.douban.com/" target="_blank"><img src="./index_files/atdouban.gif" border="0"></a></td></tr></tbody></table></div>
+
+<iframe id="sina_widget_2192241300" style="width:100%; height:500px;" frameborder="0" scrolling="no" src="./index_files/widget_blog.html"></iframe></div>
+                    <div id="meta" class="module">
+                        <div class="modTop"></div>
+                            <div class="modBody">
+                                <ul>
+ <li class="subscribe" style="line-height:180%;"><div><a href="http://dreamhead.blogbus.com/index.rdf"><img src="./index_files/rss.gif" alt="RSS"></a> <a href="http://bangzhuzhongxin.blogbus.com/logs/5452786.html" target="_blank">什么是RSS？</a></div><div class="inezha" style="margin:.5em 0"><a href="http://inezha.com/add2?hid=2320&amp;url=http://dreamhead.blogbus.com/index.rdf" title="此博客内容更新用IM提醒我" target="_blank"><img src="./index_files/anothr.gif" alt="用IM提醒我内容更新"></a></div><div class="qqmail" style="margin:.5em 0"><a href="http://mail.qq.com/cgi-bin/feed?u=http://dreamhead.blogbus.com/index.rdf" title="订阅到QQ邮箱" target="_blank"><img src="./index_files/qqmail.png" alt="订阅到QQ邮箱"></a></div><div class="xiangguo" style="margin:.5em 0"><a href="http://www.xianguo.com/subscribe.php?url=http://dreamhead.blogbus.com/index.rdf" title="订阅到鲜果阅读器" target="_blank"><img src="./index_files/xianguo.png" alt="订阅到鲜果阅读器"></a></div><div class="g-reader" style="margin:.5em 0"><a href="http://fusion.google.com/add?feedurl=http://dreamhead.blogbus.com/index.rdf" title="订阅到Google阅读器" target="_blank"><img src="./index_files/google.png" alt="订阅到Google阅读器"></a></div><div class="zhuaxia" style="margin:.5em 0"><a href="http://www.zhuaxia.com/add_channel.php?url=http://dreamhead.blogbus.com/index.rdf" title="订阅到抓虾阅读器" target="_blank"><img src="./index_files/zhuaxia.png" alt="订阅到抓虾阅读器"></a></div></li>
+                                   <li class="poweredBy">
+                                        <a href="http://www.blogbus.com/" target="_blank"><img src="./index_files/link_blogbus.gif" alt="博客大巴"></a><div><a href="http://bangzhuzhongxin.blogbus.com/" target="_blank" title="博客大巴使用指南">博客大巴使用指南</a></div><div><a href="http://www.blogbus.com/skin/" target="_blank" title="博客大巴模板中心">博客大巴模板中心</a></div><div><a href="http://passport.blogbus.com/register_form" target="_blank" title="免费注册博客大巴">免费注册博客大巴</a></div><div><a href="http://banjia.blogbus.com/" target="_blank" title="一键博客搬家工具">一键博客搬家工具</a></div><div><a href="http://www.icity.cn/" target="_blank" title="中文互动杂志城客">中文互动杂志城客</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="modBottom"></div>
+                        </div>
+                    <div class="sideBottom"></div>
+                </div>
+            </div>
+            <div class="innerBottom"></div>
+        </div>
+		<div class="clear"></div>
+		<div id="footer">
+			<div class="copyright">Copyright © 2002-2016 BlogBus.com, All Rights Reserved. <a href="http://www.blogbus.com/" target="_blank">博客大巴</a> 版权所有</div>
+		</div>
+	</div>
+</div><script type="text/javascript" src="./index_files/helper1(1).js"></script><div style="display:none;"><script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fdd4239f766d48e2a32f646e0807114bc' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./index_files/h.js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=dd4239f766d48e2a32f646e0807114bc" target="_blank"><img border="0" src="./index_files/21.gif" width="20" height="20"></a></div>		<div style="display:none;"><script type="text/javascript">
+	var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8452dbf205b0f6608661b0fdea22c741' type='text/javascript'%3E%3C/script%3E"));
+	</script><script src="./index_files/h(1).js" type="text/javascript"></script><a href="http://tongji.baidu.com/hm-web/welcome/ico?s=8452dbf205b0f6608661b0fdea22c741" target="_blank">网站统计</a></div><script type="text/javascript" src="./index_files/counter.js.php"></script><script src="./index_files/counter_more.php"></script><div id="picoboxMask" style="height: 1080px; width: 1920px;"></div><div id="picobox" style="display:none;"><table style="width:100%;height:100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="rc_lt"></td><td class="top"></td><td class="rc_rt"></td></tr><tr><td class="left"></td><td class="content"><div id="picoboxInner"><h1 class="picoboxTitle"><div><span></span><a href="http://dreamhead.blogbus.com/#" onclick="Picobox.hide();return false;" class="close">X</a></div></h1><div class="picoboxBody"></div></div></td><td class="right"></td></tr><tr><td class="rc_lb"></td><td class="bottom"></td><td class="rc_rb"></td></tr></tbody></table></div></body></html>

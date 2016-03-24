@@ -1,0 +1,50 @@
+function commentSubmit() {
+if(!checkcmt(document.cform)){
+return;
+}
+document.cform.action='http://blog.home.blogbus.com/front/4212/comments/227268386/item';
+document.cform.target='_self';
+document.cform.login.value='1';
+document.cform.submit();
+}
+function checkcmt(obj) {
+if (obj.content.value=='') {
+ alert('评论内容为必填项');
+ $('#submit_comment').disabled=false;
+ return false;
+}
+if (obj.content.value.length>200) {
+ alert('评论内容过长（最多200字），请修改后再次提交。');
+ $('#submit_comment').disabled=false;
+ return false;
+}
+return true;
+}
+function anoy_mode(){
+$('#fs_login').hide();
+$('#share_check').hide();
+if($('#cshare')) {
+	$('#cshare').removeAttr('checked');
+}
+$('#remember_box').show('fast');
+$('#fs_nologin').show('fast');
+document.cform.action='http://blog.home.blogbus.com/front/4212/comments/227268386/item';
+document.cform.target='_self';
+return false;
+}
+function login_mode() {
+$('#fs_nologin').hide();
+$('#share_check').show();
+if($('#cshare')) {
+	$('#cshare').attr('checked','checked');
+}
+$('#remember_box').hide();
+
+$('#fs_login').show('fast');
+document.cform.action='http://passport.blogbus.com/login?passport=1&app=blogbus&goto=http%3A%2F%2Fhome.blogbus.com%2Fpassport%3F_pspt%3D1%26_data%3D%5Bdata%5D%26_sign%3D%5Bsign%5D%26forward%3Dhttp%253A%252F%252Fdreamhead.blogbus.com%252Fpassport.html%26return%3D1&once=484e4896b4535c7a&sign=iazdypzLDCtZghnDN8sM-Q&return=1';
+document.cform.target='ifr_login';
+return false;
+}
+$('#commentForm').html("<h2>\u53d1\u8868\u8bc4\u8bba<\/h2>\r\n<a name=\"cmt_form\"><\/a>\r\n<form method=\"post\" name=\"cform\" action=\"\" onsubmit=\"return check_cmt(this);\">\r\n<fieldset style=\"margin:0;padding:0;border:none;display:none;\" id=\"fs_nologin\">\r\n<div><label for=\"cname\">\u59d3\u3000\u540d<\/label><input class=\"textField\" id=\"cname\" name=\"cname\" type=\"text\" \/>\r\n<span style=\"color:#ccc;margin-left:5px;\" class=\"emailnotice\"><a href=\"#\" title=\"\u767b\u5f55\u540e\u8bc4\u8bba\"\r\nstyle=\"text-decoration:underline;\"\r\nonclick=\"return login_mode();\">\u767b\u5f55\u540e\u8bc4\u8bba<\/a><\/span><\/div>\r\n<div><label for=\"cemail\">E-Mail<\/label><input class=\"textField\" id=\"cemail\" name=\"email\"  type=\"text\" \/>\r\n<span style=\"color:#ccc;margin-left:5px;\" class=\"emailnotice\">\u60a8\u5c06\u6536\u5230\u535a\u4e3b\u7684\u56de\u590d\u90ae\u4ef6<\/span>\r\n<\/div>\r\n<div><label for=\"chomepage\">\u5730\u3000\u5740<\/label><input class=\"textField\" id=\"chomepage\" name=\"homepage\" type=\"text\" \/><\/div>\r\n<\/fieldset>\r\n<fieldset style=\"margin:0;padding:0;border:none;display:none;\" id=\"fs_login\">\r\n<div><label for=\"username\">\u7528\u6237\u540d<\/label><input class=\"textField\" id=\"username\" name=\"username\" type=\"text\"  tabindex=\"1\" \/>\r\n    <\/div>\r\n<div><label for=\"password\">\u5bc6\u3000\u7801<\/label><input class=\"textField\" id=\"password\" name=\"password\" type=\"password\" value=\"\" tabindex=\"2\" \/><\/div>\r\n<\/fieldset>\r\n<div><textarea name=\"content\" rows=\"8\" tabindex=\"3\"><\/textarea><\/div>\r\n<div class=\"submit\">\r\n<input type=\"hidden\" name=\"login\" value=\"0\" \/>\r\n<input type=\"hidden\" name=\"postId\" value=\"227268386\" \/>\r\n<input type=\"hidden\" name=\"blogId\" value=\"4212\" \/>\r\n<input type=\"hidden\" name=\"checksum\" value=\"13fcbd80d9129c4bde851a7b185d8f82\" \/>\r\n<input type=\"hidden\" name=\"name\" value=\"\" \/>\r\n<table>\r\n<tr>\r\n<td><input class=\"button\" name=\"addsub\" value=\"\u63d0\u4ea4\" id=\"submit_comment\" type=\"submit\" \/><\/td>\r\n<td id=\"share_check\">\r\n\r\n<\/td>\r\n<\/tr>\r\n<\/table>\r\n<\/div>\r\n<\/form>\r\n<iframe style=\"display:none;width:1px;height:1px;\" name=\"ifr_login\" id=\"ifr_login\"><\/iframe>");
+$('#ifr_login').attr("src","about:blank");
+login_mode();
