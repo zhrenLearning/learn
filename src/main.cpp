@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 	  cout << str << endl;
 
 	  */
-	http::server2::server s("0.0.0.0", "8081", "F:\\opensource\\AsioHttp\\AsioHttp", 4);
+	http::server2::server s("0.0.0.0", "80", "/usr/local/src/learn/html", 4);
 
     // Run the server until stopped.
     s.run();

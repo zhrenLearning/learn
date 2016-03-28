@@ -60,7 +60,7 @@ void connection::handle_read(const boost::system::error_code& e,
 	//std::cout << buffer_.data() << std::endl
 	
 
-	std::cout<< std::this_thread::get_id()<<std::endl;
+//	std::cout<< std::this_thread::get_id()<<std::endl;
 
 	CHttpParser parser(buffer_.data(), bytes_transferred);
 	string strJsSessionID = parser.get_param("name");

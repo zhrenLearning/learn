@@ -2,7 +2,7 @@ PROJECT(AsioHttp)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 set(CMAKE_BUILD_TYPE "Release")
-
+set(CMAKE_CXX_FLAGS "-std=c++11")
 set(CXX_FLAGS
  -g
  -DCHECK_PTHREAD_RETURN_VALUE
@@ -18,7 +18,7 @@ set(CXX_FLAGS
  -Wshadow
  -Wwrite-strings
  -march=native
- -std=c++0x
+ -std=c++11
  -rdynamic
  )
 
@@ -36,4 +36,4 @@ LINK_DIRECTORIES(/usr/local/lib)
 AUX_SOURCE_DIRECTORY(. DIR_SRCS)
 ADD_EXECUTABLE(AsioHttp ${DIR_SRCS})
 
-TARGET_LINK_LIBRARIES(AsioHttp boost_system)
+TARGET_LINK_LIBRARIES(AsioHttp boost_system boost_thread pthread)
