@@ -8,7 +8,8 @@ HttpServer::HttpServer(const std::string& address, const std::string& port,
   : service_pool_(io_service_pool_size),
     signals_(service_pool_.get_service()),
     acceptor_(service_pool_.get_service()),
-	httpHandle(std::make_shared<HttpHandle>(doc_root))
+	httpHandle(std::make_shared<HttpHandle>(doc_root)),
+	connection_pool_(io_service_pool_size)
 {
     signals_.add(SIGINT);
     signals_.add(SIGTERM);

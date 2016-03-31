@@ -7,6 +7,7 @@
 #include <memory>
 #include "servicepool.h"
 #include "httpconnection.h"
+#include "conntionpool.h"
 
 namespace hollow
 {
@@ -31,6 +32,7 @@ private:
     void handle_stop();
 
     hollow::http::ServicePool service_pool_;
+	hollow::http::ConntionPool connection_pool_;
     boost::asio::signal_set signals_;
     boost::asio::ip::tcp::acceptor acceptor_;
 
