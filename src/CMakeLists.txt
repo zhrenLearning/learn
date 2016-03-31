@@ -36,4 +36,4 @@ LINK_DIRECTORIES(/usr/local/lib)
 AUX_SOURCE_DIRECTORY(. DIR_SRCS)
 ADD_EXECUTABLE(AsioHttp ${DIR_SRCS})
 
-TARGET_LINK_LIBRARIES(AsioHttp boost_system boost_thread pthread)
+TARGET_LINK_LIBRARIES(AsioHttp boost_system boost_thread pthread mysqlcppconn)

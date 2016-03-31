@@ -17141,6 +17141,16 @@ boost/lexical_cast.hpp
 -
 server.hpp
 /usr/local/src/learn/src/server.hpp
+mysql_connection.h
+/usr/local/src/learn/src/mysql_connection.h
+cppconn/driver.h
+-
+cppconn/exception.h
+-
+cppconn/resultset.h
+-
+cppconn/statement.h
+-
 iostream
 -
 thread
