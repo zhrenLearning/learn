@@ -1,4 +1,4 @@
-#include "conntionpool.h"
+﻿#include "conntionpool.h"
 #include <iostream>
 
 
@@ -12,7 +12,6 @@ ConntionPool::ConntionPool(std::size_t pool_size) : next_conn_ptr_(0)
 	try
 	{
 		Driver *driver;
-		sql::Connection *connection;
 		const char* user = "root";
 		const char* passwd = "sentimental";
 		const char* host = "tcp://127.0.0.1:3306";
@@ -21,7 +20,7 @@ ConntionPool::ConntionPool(std::size_t pool_size) : next_conn_ptr_(0)
 		for (std::size_t i = 0; i < pool_size; ++i)
 		{
 			conn_ptrs_.emplace_back(driver->connect(host, user, passwd));
-			conn_ptrs_[i]->setSchema("db_detail");
+			conn_ptrs_[i]->setSchema("test");
 			cout << "connection succ ----- " << i << endl;
 		}
 	}
@@ -44,7 +43,7 @@ ConntionPool::~ConntionPool()
 	}
 }
 
-std::shared_ptr<sql::Connection>& ConntionPool::get_conn()
+std::shared_ptr<sql::Connection> ConntionPool::get_conn()
 {
 	std::shared_ptr<sql::Connection> conn_ptr = conn_ptrs_[next_conn_ptr_];
 	++next_conn_ptr_;

@@ -1,4 +1,4 @@
-#ifndef CONNECTION_POOL_H_
+﻿#ifndef CONNECTION_POOL_H_
 #define CONNECTION_POOL_H_
 
 #include "mysql_connection.h"
@@ -20,7 +20,7 @@ public:
 	explicit ConntionPool(std::size_t pool_size);
 	~ConntionPool();
 
-	std::shared_ptr<sql::Connection>& get_conn();
+	std::shared_ptr<sql::Connection> get_conn();
 private:
 	typedef std::shared_ptr<sql::Connection> conn_ptr;
 	std::vector<conn_ptr> conn_ptrs_;

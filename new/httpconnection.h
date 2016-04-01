@@ -1,4 +1,4 @@
-#ifndef HTTPCONNECTION_H
+﻿#ifndef HTTPCONNECTION_H
 #define HTTPCONNECTION_H
 
 #include <boost/asio.hpp>
@@ -8,6 +8,12 @@
 #include "parser.hpp"
 #include "HttpHandle.h"
 #include "HttpResponse.h"
+
+#include "mysql_connection.h"
+#include <cppconn/exception.h>
+#include <cppconn/resultset.h>
+#include <cppconn/statement.h>
+#include <cppconn/prepared_statement.h>
 
 
 namespace hollow
@@ -22,7 +28,7 @@ namespace http
 			HttpConnection(const HttpConnection&) = delete;
 			HttpConnection& operator= (const HttpConnection&) = delete;
 
-			explicit HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle);
+			explicit HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle, std::shared_ptr<sql::Connection> &conn_ptr);
 			~HttpConnection();
 			boost::asio::ip::tcp::socket& socket();
 			void start();
@@ -39,6 +45,7 @@ namespace http
 			std::shared_ptr<hollow::http::HttpRequest> http_request_parser;
 			std::shared_ptr<hollow::http::HttpResponse> http_response_parser;
 			std::shared_ptr<hollow::http::HttpHandle>& httpHandle_;
+			std::shared_ptr<sql::Connection> conn_ptr_;
 		};
 		typedef std::shared_ptr<HttpConnection> connection_ptr;
 

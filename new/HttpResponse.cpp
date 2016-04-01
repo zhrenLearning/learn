@@ -1,4 +1,4 @@
-#include "HttpResponse.h"
+﻿#include "HttpResponse.h"
 
 using namespace hollow::http;
 

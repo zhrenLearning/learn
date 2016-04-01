@@ -1,4 +1,4 @@
-#include "parser.hpp"
+﻿#include "parser.hpp"
 #include "httpconnection.h"
 
 using namespace hollow::http;

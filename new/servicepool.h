@@ -1,4 +1,4 @@
-#ifndef SERVICEPOOL_H
+﻿#ifndef SERVICEPOOL_H
 #define SERVICEPOOL_H
 
 #include <boost/asio.hpp>

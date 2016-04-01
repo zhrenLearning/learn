@@ -1,4 +1,4 @@
-#ifndef HTTP_HANDLE_H_
+﻿#ifndef HTTP_HANDLE_H_
 #define HTTP_HANDLE_H_
 
 #include <string>

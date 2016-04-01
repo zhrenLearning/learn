@@ -1,4 +1,4 @@
-#ifndef HTTP_RESPONSE_H_
+﻿#ifndef HTTP_RESPONSE_H_
 #define HTTP_RESPONSE_H_
 
 #include <string>

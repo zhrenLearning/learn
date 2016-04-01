@@ -1,4 +1,4 @@
-#include "httpserver.h"
+﻿#include "httpserver.h"
 #include <boost/bind.hpp>
 
 using namespace hollow::http;
@@ -36,7 +36,7 @@ void HttpServer::run()
 
 void HttpServer::start_accept()
 {
-    new_connection_.reset(new HttpConnection(service_pool_.get_service(), httpHandle));
+    new_connection_.reset(new HttpConnection(service_pool_.get_service(), httpHandle, connection_pool_.get_conn()));
     acceptor_.async_accept(new_connection_->socket(), boost::bind(&HttpServer::handle_accept, this, boost::asio::placeholders::error));
 }
 

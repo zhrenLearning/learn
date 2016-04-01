@@ -1,10 +1,12 @@
-#include "HttpHandle.h"
+﻿#include "HttpHandle.h"
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <iostream>
 
 using namespace hollow::http;
 using namespace std;
+using namespace sql;
 
 HttpHandle::HttpHandle(const string& doc_root) : doc_root_(doc_root)
 {
@@ -17,6 +19,45 @@ HttpHandle::~HttpHandle()
 
 void HttpHandle::handle(std::shared_ptr<HttpConnection> httpConnection)
 {
+	if (httpConnection->http_request_parser->http_method == "GET")
+	{
+		//database
+		try
+		{
+			if (httpConnection->conn_ptr_->isValid())
+			{
+				Statement *stmt = httpConnection->conn_ptr_->createStatement();
+				//string sql_statement = "insert into tb_damage_type(damage_id, damage_detail) values (?, ?)";
+				string sql_statement = "insert into tb_test(name) values (?)";
+				PreparedStatement *pstmt = httpConnection->conn_ptr_->prepareStatement(sql_statement.c_str());
+				string str = "哈啊哈";
+				pstmt->setString(1, str.c_str());
+				pstmt->executeUpdate();
+				delete pstmt;
+				delete stmt;
+			}
+			else
+			{
+
+			}
+		}
+		catch (sql::SQLException &e)
+		{
+			cout << "# ERR: SQLException in " << __FILE__;
+			cout << "(" << __FUNCTION__ << ") on line " << __LINE__ << endl;
+			cout << "# ERR: " << e.what();
+			cout << " (MySQL error code: " << e.getErrorCode();
+			cout << ", SQLState: " << e.getSQLState() << " )" << endl;
+		}
+	}
+	else if (httpConnection->http_request_parser->http_method == "POST")
+	{
+		//database
+	}
+	else
+	{
+		//no surport
+	}
 	std::string request_path;
 	if (!url_decode(httpConnection->http_request_parser->http_url, request_path))
 	{
