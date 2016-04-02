@@ -49,9 +49,32 @@ include CMakeFiles/AsioHttp.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AsioHttp.dir/flags.make
 
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.o: conntionpool.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/conntionpool.cpp.o"
+	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/conntionpool.cpp.o -c /usr/local/src/learn/new/conntionpool.cpp
+
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AsioHttp.dir/conntionpool.cpp.i"
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -E /usr/local/src/learn/new/conntionpool.cpp > CMakeFiles/AsioHttp.dir/conntionpool.cpp.i
+
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AsioHttp.dir/conntionpool.cpp.s"
+	g++  $(CXX_DEFINES) $(CXX_FLAGS) -S /usr/local/src/learn/new/conntionpool.cpp -o CMakeFiles/AsioHttp.dir/conntionpool.cpp.s
+
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.requires:
+.PHONY : CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.requires
+
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.provides: CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.provides.build
+.PHONY : CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.provides
+
+CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.provides.build: CMakeFiles/AsioHttp.dir/conntionpool.cpp.o
+
 CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o: HttpResponse.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o -c /usr/local/src/learn/new/HttpResponse.cpp
 
@@ -74,7 +97,7 @@ CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o.provides.build: CMakeFiles/AsioHttp.d
 
 CMakeFiles/AsioHttp.dir/http_parser.c.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/http_parser.c.o: http_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/AsioHttp.dir/http_parser.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/AsioHttp.dir/http_parser.c.o   -c /usr/local/src/learn/new/http_parser.c
 
@@ -97,7 +120,7 @@ CMakeFiles/AsioHttp.dir/http_parser.c.o.provides.build: CMakeFiles/AsioHttp.dir/
 
 CMakeFiles/AsioHttp.dir/main.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/main.cpp.o: main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/main.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/main.cpp.o -c /usr/local/src/learn/new/main.cpp
 
@@ -120,7 +143,7 @@ CMakeFiles/AsioHttp.dir/main.cpp.o.provides.build: CMakeFiles/AsioHttp.dir/main.
 
 CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o: HttpHandle.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o -c /usr/local/src/learn/new/HttpHandle.cpp
 
@@ -143,7 +166,7 @@ CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o.provides.build: CMakeFiles/AsioHttp.dir
 
 CMakeFiles/AsioHttp.dir/httpconnection.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/httpconnection.cpp.o: httpconnection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/httpconnection.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/httpconnection.cpp.o -c /usr/local/src/learn/new/httpconnection.cpp
 
@@ -166,7 +189,7 @@ CMakeFiles/AsioHttp.dir/httpconnection.cpp.o.provides.build: CMakeFiles/AsioHttp
 
 CMakeFiles/AsioHttp.dir/parser.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/parser.cpp.o: parser.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/parser.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/parser.cpp.o -c /usr/local/src/learn/new/parser.cpp
 
@@ -189,7 +212,7 @@ CMakeFiles/AsioHttp.dir/parser.cpp.o.provides.build: CMakeFiles/AsioHttp.dir/par
 
 CMakeFiles/AsioHttp.dir/servicepool.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/servicepool.cpp.o: servicepool.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/servicepool.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/servicepool.cpp.o -c /usr/local/src/learn/new/servicepool.cpp
 
@@ -212,7 +235,7 @@ CMakeFiles/AsioHttp.dir/servicepool.cpp.o.provides.build: CMakeFiles/AsioHttp.di
 
 CMakeFiles/AsioHttp.dir/httpserver.cpp.o: CMakeFiles/AsioHttp.dir/flags.make
 CMakeFiles/AsioHttp.dir/httpserver.cpp.o: httpserver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /usr/local/src/learn/new/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/AsioHttp.dir/httpserver.cpp.o"
 	g++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/AsioHttp.dir/httpserver.cpp.o -c /usr/local/src/learn/new/httpserver.cpp
 
@@ -235,6 +258,7 @@ CMakeFiles/AsioHttp.dir/httpserver.cpp.o.provides.build: CMakeFiles/AsioHttp.dir
 
 # Object files for target AsioHttp
 AsioHttp_OBJECTS = \
+"CMakeFiles/AsioHttp.dir/conntionpool.cpp.o" \
 "CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o" \
 "CMakeFiles/AsioHttp.dir/http_parser.c.o" \
 "CMakeFiles/AsioHttp.dir/main.cpp.o" \
@@ -247,6 +271,7 @@ AsioHttp_OBJECTS = \
 # External object files for target AsioHttp
 AsioHttp_EXTERNAL_OBJECTS =
 
+bin/AsioHttp: CMakeFiles/AsioHttp.dir/conntionpool.cpp.o
 bin/AsioHttp: CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o
 bin/AsioHttp: CMakeFiles/AsioHttp.dir/http_parser.c.o
 bin/AsioHttp: CMakeFiles/AsioHttp.dir/main.cpp.o
@@ -264,6 +289,7 @@ bin/AsioHttp: CMakeFiles/AsioHttp.dir/link.txt
 CMakeFiles/AsioHttp.dir/build: bin/AsioHttp
 .PHONY : CMakeFiles/AsioHttp.dir/build
 
+CMakeFiles/AsioHttp.dir/requires: CMakeFiles/AsioHttp.dir/conntionpool.cpp.o.requires
 CMakeFiles/AsioHttp.dir/requires: CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o.requires
 CMakeFiles/AsioHttp.dir/requires: CMakeFiles/AsioHttp.dir/http_parser.c.o.requires
 CMakeFiles/AsioHttp.dir/requires: CMakeFiles/AsioHttp.dir/main.cpp.o.requires

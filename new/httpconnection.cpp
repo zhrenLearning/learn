@@ -9,7 +9,7 @@ using namespace std;
 using namespace hollow::http::file_types;
 
 
-HttpConnection::HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle, std::shared_ptr<sql::Connection> &conn_ptr)
+HttpConnection::HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle, std::shared_ptr<sql::Connection> conn_ptr)
 : socket_(io_service), httpHandle_(httpHandle), conn_ptr_(conn_ptr)
 {
 

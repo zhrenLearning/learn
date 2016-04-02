@@ -135,6 +135,30 @@ connection.cpp.s:
 	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/connection.cpp.s
 .PHONY : connection.cpp.s
 
+conntionpool.o: conntionpool.cpp.o
+.PHONY : conntionpool.o
+
+# target to build an object file
+conntionpool.cpp.o:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.o
+.PHONY : conntionpool.cpp.o
+
+conntionpool.i: conntionpool.cpp.i
+.PHONY : conntionpool.i
+
+# target to preprocess a source file
+conntionpool.cpp.i:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.i
+.PHONY : conntionpool.cpp.i
+
+conntionpool.s: conntionpool.cpp.s
+.PHONY : conntionpool.s
+
+# target to generate assembly for a file
+conntionpool.cpp.s:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.s
+.PHONY : conntionpool.cpp.s
+
 http_parser.o: http_parser.c.o
 .PHONY : http_parser.o
 
@@ -158,6 +182,30 @@ http_parser.s: http_parser.c.s
 http_parser.c.s:
 	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/http_parser.c.s
 .PHONY : http_parser.c.s
+
+httpserver.o: httpserver.cpp.o
+.PHONY : httpserver.o
+
+# target to build an object file
+httpserver.cpp.o:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/httpserver.cpp.o
+.PHONY : httpserver.cpp.o
+
+httpserver.i: httpserver.cpp.i
+.PHONY : httpserver.i
+
+# target to preprocess a source file
+httpserver.cpp.i:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/httpserver.cpp.i
+.PHONY : httpserver.cpp.i
+
+httpserver.s: httpserver.cpp.s
+.PHONY : httpserver.s
+
+# target to generate assembly for a file
+httpserver.cpp.s:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/httpserver.cpp.s
+.PHONY : httpserver.cpp.s
 
 io_service_pool.o: io_service_pool.cpp.o
 .PHONY : io_service_pool.o
@@ -363,9 +411,15 @@ help:
 	@echo "... connection.o"
 	@echo "... connection.i"
 	@echo "... connection.s"
+	@echo "... conntionpool.o"
+	@echo "... conntionpool.i"
+	@echo "... conntionpool.s"
 	@echo "... http_parser.o"
 	@echo "... http_parser.i"
 	@echo "... http_parser.s"
+	@echo "... httpserver.o"
+	@echo "... httpserver.i"
+	@echo "... httpserver.s"
 	@echo "... io_service_pool.o"
 	@echo "... io_service_pool.i"
 	@echo "... io_service_pool.s"

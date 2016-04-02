@@ -13,14 +13,14 @@ ConntionPool::ConntionPool(std::size_t pool_size) : next_conn_ptr_(0)
 	{
 		Driver *driver;
 		const char* user = "root";
-		const char* passwd = "sentimental";
+		const char* passwd = "Sentimental";
 		const char* host = "tcp://127.0.0.1:3306";
 		driver = get_driver_instance();
 		
 		for (std::size_t i = 0; i < pool_size; ++i)
 		{
 			conn_ptrs_.emplace_back(driver->connect(host, user, passwd));
-			conn_ptrs_[i]->setSchema("test");
+			conn_ptrs_[i]->setSchema("db_detail");
 			cout << "connection succ ----- " << i << endl;
 		}
 	}

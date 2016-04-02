@@ -1,4 +1,5 @@
 FILE(REMOVE_RECURSE
+  "CMakeFiles/AsioHttp.dir/conntionpool.cpp.o"
   "CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o"
   "CMakeFiles/AsioHttp.dir/http_parser.c.o"
   "CMakeFiles/AsioHttp.dir/main.cpp.o"

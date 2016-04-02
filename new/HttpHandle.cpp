@@ -28,10 +28,11 @@ void HttpHandle::handle(std::shared_ptr<HttpConnection> httpConnection)
 			{
 				Statement *stmt = httpConnection->conn_ptr_->createStatement();
 				//string sql_statement = "insert into tb_damage_type(damage_id, damage_detail) values (?, ?)";
-				string sql_statement = "insert into tb_test(name) values (?)";
+				string sql_statement = "insert into tb_damage_type(damage_id, damage_detail) value (?, ?)";
 				PreparedStatement *pstmt = httpConnection->conn_ptr_->prepareStatement(sql_statement.c_str());
 				string str = "哈啊哈";
-				pstmt->setString(1, str.c_str());
+                                pstmt->setUInt(1, 1);
+				pstmt->setString(2, str.c_str());
 				pstmt->executeUpdate();
 				delete pstmt;
 				delete stmt;

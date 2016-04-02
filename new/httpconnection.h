@@ -28,7 +28,7 @@ namespace http
 			HttpConnection(const HttpConnection&) = delete;
 			HttpConnection& operator= (const HttpConnection&) = delete;
 
-			explicit HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle, std::shared_ptr<sql::Connection> &conn_ptr);
+			explicit HttpConnection(boost::asio::io_service& io_service, std::shared_ptr<hollow::http::HttpHandle>& httpHandle, std::shared_ptr<sql::Connection> conn_ptr);
 			~HttpConnection();
 			boost::asio::ip::tcp::socket& socket();
 			void start();
@@ -55,7 +55,7 @@ namespace http
 			{
 				const char* extension;
 				const char* mime_type;
-			} mappings[] =
+			} mappings[]=
 			{
 				{ "gif", "image/gif" },
 				{ "htm", "text/html" },

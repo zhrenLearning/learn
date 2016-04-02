@@ -11,6 +11,7 @@ SET(CMAKE_C_COMPILER_ID "GNU")
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/usr/local/src/learn/new/HttpHandle.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/HttpHandle.cpp.o"
   "/usr/local/src/learn/new/HttpResponse.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/HttpResponse.cpp.o"
+  "/usr/local/src/learn/new/conntionpool.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/conntionpool.cpp.o"
   "/usr/local/src/learn/new/httpconnection.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/httpconnection.cpp.o"
   "/usr/local/src/learn/new/httpserver.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/httpserver.cpp.o"
   "/usr/local/src/learn/new/main.cpp" "/usr/local/src/learn/new/CMakeFiles/AsioHttp.dir/main.cpp.o"

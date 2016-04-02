@@ -159,6 +159,30 @@ HttpResponse.cpp.s:
 	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/HttpResponse.cpp.s
 .PHONY : HttpResponse.cpp.s
 
+conntionpool.o: conntionpool.cpp.o
+.PHONY : conntionpool.o
+
+# target to build an object file
+conntionpool.cpp.o:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.o
+.PHONY : conntionpool.cpp.o
+
+conntionpool.i: conntionpool.cpp.i
+.PHONY : conntionpool.i
+
+# target to preprocess a source file
+conntionpool.cpp.i:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.i
+.PHONY : conntionpool.cpp.i
+
+conntionpool.s: conntionpool.cpp.s
+.PHONY : conntionpool.s
+
+# target to generate assembly for a file
+conntionpool.cpp.s:
+	$(MAKE) -f CMakeFiles/AsioHttp.dir/build.make CMakeFiles/AsioHttp.dir/conntionpool.cpp.s
+.PHONY : conntionpool.cpp.s
+
 http_parser.o: http_parser.c.o
 .PHONY : http_parser.o
 
@@ -318,6 +342,9 @@ help:
 	@echo "... HttpResponse.o"
 	@echo "... HttpResponse.i"
 	@echo "... HttpResponse.s"
+	@echo "... conntionpool.o"
+	@echo "... conntionpool.i"
+	@echo "... conntionpool.s"
 	@echo "... http_parser.o"
 	@echo "... http_parser.i"
 	@echo "... http_parser.s"

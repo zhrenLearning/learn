@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
 
   driver = get_driver_instance();
   con = driver->connect("tcp://127.0.0.1:3306", "root", "Sentimental");
-  con->setSchema("test");
+  con->setSchema("db_detail");
 
   stmt = con->createStatement();
   res = stmt->executeQuery("SELECT 'Hello World!' AS _message");
