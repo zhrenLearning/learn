@@ -77,6 +77,31 @@ namespace http
 				return "text/plain";
 			}
 		}
+
+		namespace static_html
+		{
+			static struct html_mapping
+			{
+				const char* url_get;
+				const char* url_html;
+			} html_map[] = 
+			{
+				{"show.html?device_type=1&damage_type=1", "01-01.html"},
+				{"show.html?device_type=1&damage_type=2", "01-02.html"}
+			};
+
+			inline static std::string url_to_html(const std::string& url)
+			{
+				for(static_html s : html_map)
+				{
+					if(s.url_get == url)
+					{
+						return s.usr_html;
+					}
+				}
+				return "";
+			}
+		}
 }
 }
 

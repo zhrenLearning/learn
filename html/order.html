@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>手机维修 | 快修</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- 头部开始 -->
+	<div class="header header-02">
+		<div class="logo">
+			<a href="index.html"><img src="images/logo-02.png"></a>
+		</div>
+		<a class="hot-line hot-line-02">免费上门：400-888-8888</a>
+	</div>
+	<div class="devider devider-00"></div>
+<!-- 头部结束 -->
+<!-- 下单开始 -->
+<div class="order-form">
+	<h1>
+		<img src="images/icon-edit.png">
+		<span>订单填写</span>
+	</h1>
+	<div class="devider"></div>
+	<div class="infor">
+		<ul>
+			<li class="cell-01">姓名</li>
+			<li class="cell-04 cell-06">
+				<input type="text" value="您的姓名（必填）"
+				onfocus="OnFocusFun(this,'您的姓名（必填）')" 
+				onblur="OnBlurFun(this,'您的姓名（必填）')">
+			</li>
+		</ul>
+		<ul>
+			<li class="cell-01">手机号</li>
+			<li class="cell-04 cell-06">
+				<input type="text" value="请输入您的手机号（必填）"
+				onfocus="OnFocusFun(this,'请输入您的手机号（必填）')" 
+				onblur="OnBlurFun(this,'请输入您的手机号（必填）')" >
+			</li>
+		</ul>
+		<ul>
+			<li class="cell-01">验证码</li>
+			<li class="cell-04 cell-06">
+				<input type="text" value="请输入验证码"
+				onfocus="OnFocusFun(this,'请输入验证码')" 
+				onblur="OnBlurFun(this,'请输入验证码')" >
+				<span class="verify">获取验证码</span>
+			</li>
+		</ul>
+		<ul>
+			<li class="cell-01">所在城市</li>
+			<li class="cell-02">上海</li>
+			<li class="cell-02"><!-- <img src="images/icon-more-03.png"> -->
+				<select name="city" id="city" onchange="set_city(this, document.getElementById('area'));"> 
+				    <option value=0>请选择</option> 
+				    <option value=台湾>台湾</option> 
+				    <option value=马来西亚>马来西亚</option> 
+				    <option value=北京>北京</option> 
+				</select>
+			</li>
+			<li class="cell-02"><!-- <img src="images/icon-more-03.png"> -->
+				<select id="area" name="area"> 
+				    <option value=0>请选择</option> 
+				</select> 
+			</li>
+		</ul>
+		<ul>
+			<li class="cell-04">
+				<input type="text" value="您可以详细描述手机故障或其他要求（选填）"
+				onfocus="OnFocusFun(this,'您可以详细描述手机故障或其他要求（选填）')" 
+				onblur="OnBlurFun(this,'您可以详细描述手机故障或其他要求（选填）')" >
+			</li>
+		</ul>
+		<ul>
+			<li class="cell-04">
+				<input type="text" value="您可以详细描述手机故障或其他要求（选填）"
+				onfocus="OnFocusFun(this,'您可以详细描述手机故障或其他要求（选填）')" 
+				onblur="OnBlurFun(this,'您可以详细描述手机故障或其他要求（选填）')" >
+			</li>
+		</ul>
+		<a href="" class="btn-order">确定下单</a>
+		<div class="tips">提示：下单后，工作时间（8:00~22:00）内将有工程师与您取得联系确认详情。</div>
+	</div>
+	<div class="form-right form-right-02">
+		<div>
+			<P><span>产品</span>：手机</P>
+			<P><span>品牌：</span>苹果</P>
+			<P><span>型号：</span>iPhone6</P>
+			<P><span>故障部位：</span>屏幕</P>
+			<P><span>维修方案：</span>变更屏幕总成</P>
+		</div>
+		<h1>费用：￥368.00元</h1>
+		<h4>咨询如果上门通过技术调试（未涉及零件）即完成维修，则仅收取30元维修费</h4>
+		<img src="images/slogan-02.png">
+	</div>
+</div>
+<!-- 下单结束 -->
+<!-- banner03开始 -->
+<div class="banner-03">
+	<ul>
+		<li>
+			<h1>修</h1>
+			<p>
+				<span>质量保证</span>
+				<br>
+				随时随地，足不出户的修手机
+			</p>
+		</li>
+		<li>
+			<h1>原</h1>
+			<p>
+				<span>原厂品质</span>
+				<br>
+				高质配件，质量强劲
+			</p>
+		</li>
+		<li>
+			<h1>质</h1>
+			<p>
+				<span>保质保量</span>
+				<br>
+				同一保障点，保质保量
+			</p>
+		</li>
+	</ul>
+</div>
+<!-- banner03结束 -->
+<!-- 底部开始 -->
+<div class="footer">
+	<div class="footer-main">Copyright©2016 benpaobakuaixiu.com,All Right Resered 奔跑吧快修 沪B2-20030003-34号
+	</div>
+</div>
+<!-- 底部结束 -->
+<!--[IF IE 6]>
+<script src="js/DD_belatedPNG.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+DD_belatedPNG.fix(".img,img background,");
+</script>
+<![ENDIF]-->
+<script type="text/javascript">
+//机型故障选择
+function set_problems(types, problems){
+    phoneProArray = new Object(); 
+    phoneProArray['iPhone5']=new Array('台北','台南','其他'); 
+    phoneProArray['iPhone6']=new Array('Malaysia'); 
+    phoneProArray['iPhone6s']=new Array('北京'); 
+    var phoneType, phonePro; 
+    var x, y; 
+    phoneType=types.value; 
+    phonePro=problems.value; 
+    problems.length=1; 
+    if(phoneType=='0') return; 
+    if(typeof(phoneProArray[phoneType])=='undefined') return; 
+    for(x=0; x<phoneProArray[phoneType].length; x++) { 
+        y = x+1; 
+        problems.options[y] = new Option(); 
+        problems.options[y].text = phoneProArray[phoneType][x]; 
+        problems.options[y].value = phoneProArray[phoneType][x];
+    };
+    document.getElementById("priceShow").innerHTML="000";
+};
+//地区选择
+function set_city(city, areas){ 
+    cities = new Object(); 
+    cities['台湾']=new Array('台北','台南','其他'); 
+    cities['马来西亚']=new Array('Malaysia'); 
+    cities['北京']=new Array('北京'); 
+    var cityValue, areaValue; 
+    var i, ii; 
+    cityValue=city.value; 
+    areaValue=areas.value; 
+    areas.length=1; 
+    if(cityValue=='0') return; 
+    if(typeof(cities[cityValue])=='undefined') return; 
+    for(i=0; i<cities[cityValue].length; i++){ 
+        ii = i+1; 
+        areas.options[ii] = new Option(); 
+        areas.options[ii].text = cities[cityValue][i]; 
+        areas.options[ii].value = cities[cityValue][i]; 
+        };
+};
+
+//输入框清除信息
+function OnFocusFun(element,elementvalue){
+  if(element.value==elementvalue){
+    element.value="";
+    element.style.color="#333";
+  };
+};
+function OnBlurFun(element,elementvalue){
+  if(element.value==""||element.value.replace(/\s/g,"")=="")
+    {
+      element.value=elementvalue;
+      element.style.color="#999";
+    };
+};
+</script>
+</body>
+</html>

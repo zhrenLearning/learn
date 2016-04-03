@@ -39,7 +39,8 @@ void HttpConnection::handle_read()
 	{
 		if (!ec)
 		{
-			//string temp(buffer_.data(), bytes_transferred);
+			string temp(buffer_.data(), bytes_transferred);
+			cout << temp << endl;
 			//int ret = http_parser_.parserRequest(temp);
 			int ret = http_parser_.parserRequest(buffer_.data(), bytes_transferred);
 			if (ret == -1)

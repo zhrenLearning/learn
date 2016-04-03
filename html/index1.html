@@ -197,6 +197,7 @@
 <!-- banner-02 -->
 <!-- 下单开始 -->
 <div class="order-form">
+	<form action=" " method="post" id="frm">
 	<h1>
 		<img src="images/icon-edit.png">
 		<span>快速报修</span>
@@ -269,9 +270,10 @@
 			<li class="cell-01">维修报价</li>
 			<li class="cell-05" id="priceShow">选择故障后即可查看</li>
 		</ul>
-		<a href="" class="btn-order">确定下单</a>
+		<a href="" onclick="submitForm();" class="btn-order">确定下单</a>
 		<div class="tips">提示：下单后，工作时间（8:00~22:00）内将有工程师与您取得联系确认详情。</div>
 	</div>
+	</form>
 	<div class="form-right">
 		<p>咨询电话：400-888-888</p>
 		<img src="images/form-pic.png">
@@ -322,6 +324,12 @@ DD_belatedPNG.fix(".img,img background,");
 </script>
 <![ENDIF]-->
 <script type="text/javascript">
+	
+	function submitForm(){
+		var frm = document.getElementById("frm");
+		frm.submit;
+		
+	}
 
 //侧边栏菜单切换
 var sideTabs=function(){

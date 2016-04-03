@@ -1,0 +1,82 @@
+body{margin:0}
+img{vertical-align:middle;border:0}
+html{font-size:50px;}
+body{font-family:"microsoft yahei";font-size:14px;color:#333;}
+a{text-decoration:none;outline:0}
+a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}
+a:active,a:hover{outline:0}
+ul{margin:0;padding:0;list-style-type:none}
+img{vertical-align: middle;border: none;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 14px;}
+.clear{clear: both;}
+.header-wrapper{width: 100%;height: 500px;background: url(../images/banner.jpg) no-repeat 50% 0;}
+.header{height: 90px;width: 1000px;margin: 0 auto;overflow: hidden;}
+.logo{height: 90px;line-height: 90px;float: left;}
+.hot-line{display: block;float: right;color: #fff;font-size: 16px;line-height: 90px;}
+.hot-line-02{color: #333;}
+.devider{width: 100%;height:1px;background: #fff;}
+.devider-00{background: #e2e0c1;}
+.tag-menu{width: 1000px;margin: 20px auto 0;}
+.menu-wrapper{clear: both;display: none;}
+.tag-menu .first{display: block;}
+.menu-wrapper li{float: left;width: 120px;height: 48px;line-height:48px;background: url(../images/bg-uncheck.jpg) no-repeat 50% 50%;text-align: center;color: #333;margin: 0 115px 0 0;cursor: pointer;position: relative;}
+.menu-wrapper li.first-li{margin-left: 270px;}
+.menu-wrapper li img.tri{position: absolute;left: 50%;margin-left:-24px;bottom: -24px;visibility: hidden;}
+.menu-wrapper li.current{color:#fff;background: url(../images/bg-checked.jpg) no-repeat 50% 50%;}
+.menu-wrapper li.current img.tri{visibility: visible;}
+.main-wrapper{background: #f4f4f4;}
+.main-content{width:1000px;overflow: hidden;margin: 24px auto 0;}
+.side-menu{width:160px;background:#222a80;padding: 10px 0;float: left;}
+.side-menu li{ display:block;color: #fff;height: 44px;line-height:44px;margin:10px auto;padding: 0 0 0 20px;cursor: pointer;}
+.side-menu li:hover{background:#ff7171;}
+.side-menu li img{display: block;float: right;margin: 16px 20px 0;}
+.side-menu li.current{background:#ff7171;}
+.content{float: left;}
+.content ul{overflow: hidden;width: 810px;padding: 30px 0 0 30px;display: none;}
+.content ul li{width: 180px;height: 120px;margin: 0 20px 20px 0;box-shadow: 0 4px 6px rgba(0,0,0,0.2);text-align:center;overflow: hidden;background: #fff;border-radius: 6px;-webkit-border-radius: 6px;-moz-border-radius: 6px;float: left;}
+.content ul li h1{font-size:24px;line-height:14px;color: #63636b;/*margin: 20px 0 14px 20px;*/}
+.content ul li p{color: #8d8d9a;text-decoration: line-through;/*margin:14px 0 14px */20px;}
+.content ul li h2{color: #ff5000;font-size: 24px;/*margin: 18px 0 0 20*/px;}
+.content ul li h2 img{/*margin: 0 0 0 20px;*/}
+.content ul li span{font-size: 14px;}
+.content .item01{display: block;}
+.banner-02-wrapper{background:#222a80;color: #fff;overflow: hidden;margin: 30px 0;}
+.banner-02-wrapper p{width: 1000px;margin: 0 auto;padding: 65px 0;}
+.banner-02-wrapper p img{display: block; width: 70px;float: left;margin: 0 65px;}
+.banner-02-wrapper p span{ width:900px;display: block;line-height: 2;}
+.order-form{width: 978px; padding:10px;border: solid 1px #ff9845;margin: 30px auto;border-radius: 4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;overflow: hidden;}
+.order-form .devider{height: 1px;background: #ff9845;margin: 0 auto;}
+.order-form h1{width: 980px;margin: 0 auto;padding: 20px 0 10px;font-size:18px;color: #ff6600;}
+.order-form h1 img{vertical-align: bottom;}
+.order-form .infor{width: 610px;float: left;}
+.order-form ul{margin: 20px 0 0;overflow: hidden;}
+.order-form ul li{float: left;margin: 0 0 0 20px;text-align: center;line-height:40px;position: relative;}
+.order-form ul .cell-01{width:60px;height: 40px;margin: 0;border: none;text-align: right;}
+.order-form ul .cell-02{width:160px;height: 40px; border: solid 1px #ff9845;position: relative;overflow: hidden;}
+.order-form ul .cell-02 select{cursor: pointer;display:block;width:159px;height:40px;font-size:16px;color:#666;font-family:"microsoft yahei";vertical-align:middle;padding:0 0 0 20px;margin:0;text-align: center;border:none;left: -2px;top: -2px;outline-style: none;cursor: pointer;}
+.order-form ul .cell-02 select option{display: block; width: 100%;line-height: 60px;height: 60px;color:#333;}
+.order-form ul .cell-03{width: 252px;height: 40px;}
+.order-form ul .cell-04{width: 525px;height: auto;margin: 0 0 0 80px;position: relative;}
+.order-form ul .cell-05{width:250px;color: #ff6600;font-size: 18px;text-align: left;}
+.order-form ul li input{display: block;width: 100%;border: solid 1px #ff9845;height: 36px;line-height:40px;font-family: "microsoft yahei";color: #999;text-indent: 2em;outline-color: #ff9845;}
+.order-form ul .cell-04 input{height: auto;}
+.order-form ul .cell-04 .verify{position: absolute;right: -1px;top: 0;cursor: pointer;color:#fff;background: #ff9845;padding: 4px 20px; }
+.order-form ul .cell-06{width: 525px;margin: 0 0 0 20px;}
+.order-form ul li img{position: absolute;right: 20px;top:15px;}
+.order-form .btn-order{display: block;width: 220px;height: 44px;line-height:44px;font-size:24px;text-align:center;color:#fff;background: #ff9204;border: solid 1px #de7e00;margin: 30px auto 0;border-radius: 4px;-webkit-border-radius:4px;-moz-border-radius:4px;}
+.order-form .tips{color: #ff9845;text-align: center;margin: 20px 0;}
+.order-form .form-right{float:right;position: relative;}
+.order-form .form-right p{width: 220px;height: 44px;line-height: 44px;margin: 0 auto}
+.order-form .form-right img{display: block;margin: 0 auto}
+.order-form .form-right-02 div{background: #f5f5f5;border-top: solid 2px #ffa982;width: 340px;margin: 20px 0 0 0}
+.order-form .form-right-02 p{width:300px;font-size: 16px;}
+.order-form .form-right-02 p span{color: #999;}
+.order-form .form-right-02 h1,.order-form .form-right-02 h4{width:300px;}
+.banner-03{background:#222a80;color: #fff;margin: 20px 0 0;}
+.banner-03 ul{width: 1000px;padding:10px 0;margin: 0 auto;overflow: hidden;}
+.banner-03 ul li{float: left;width: 320px;overflow: hidden;}
+.banner-03 ul li h1{float:left;width:40px;height:40px;line-height:40px;text-align:center;font-size: 18px;border-radius: 100px;border: solid 1px #fff;}
+.banner-03 ul li p{width: 240px;float: left;font-size: 16px;text-align: left;margin: 10px 0 0 20px;}
+.banner-03 ul li p span{font-size: 18px;}
+.footer{background: #333;color: #ccc;padding: 30px 0;}
+.footer-main{width: 1000px;margin: 0 auto;text-align: center;}
